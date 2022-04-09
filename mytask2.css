@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;800&family=Dosis:wght@200&family=Merriweather:wght@300;400&family=Raleway:wght@200;329&family=Rubik:wght@300;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Intro section css */
+#introsection{
+  height: 100vh;
+  width: 100vw;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+.introcontainer{
+  height: 38vh;
+    width: 73vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+
+#introcont{
+  border-bottom: 2px solid rgb(235, 44, 123); 
+  padding-bottom: 8px;
+  overflow: hidden;
+  animation: borderanim 1s ease forwards;
+}
+@keyframes borderanim{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+#brand{
+  font-size: 3em;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  /* border: 2px solid yellow; */
+  position: relative;
+  top: 69px;
+  animation: brandanim 1s ease 1s forwards;
+}
+@keyframes brandanim{
+  0%{
+    top:69px;
+  }
+  100%{
+    top:0px;
+  }
+}
+#brand span{
+  
+  font-family: 'Raleway', sans-serif;
+  /* border: 2px solid pink; */
+  color: rgb(235, 44, 123);
+}
+
+.introcontainer p{
+  font-size: 2em;
+  font-family: "Raleway",serif;
+  color: wheat;
+  text-align: center;
+  opacity: 0;
+  animation: paraanim 1s ease 1s forwards;
+}
+@keyframes paraanim{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.introbtn{
+  /* border: 2px solid violet; */
+  overflow: hidden;
+}
+#btncont a{
+  height: 40px;
+  width: 139px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(235, 44, 123);
+    padding: 0px 12px;
+    position: relative;
+    bottom: 41px;
+    animation: btnanim 1s ease 1s forwards;
+    text-decoration: none;
+}
+@keyframes btnanim{
+  0%{
+    bottom:69px;
+  }
+  100%{
+    bottom:0px;
+  }
+}
+
+#welcome{
+  font-family: "Raleway",serif;
+  font-size: 1.2em;
+  color: wheat;
+}
+
+.introbtn i{
+  font-size: 1em;
+  color: wheat;
+}
+
+/* Navbar css */
+#navigationcont{
+  height: 70px;
+  width: 100vw;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(to right,rgb(17, 2, 19),rgb(33, 13, 41));
+  position: -webkit-sticky;
+  top: 0;
+  position: sticky;
+  z-index: 100;
+}
+.brandcontainer{
+  height: 100%;
+  width: 220px;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-left: 28px; */
+}
+.logocontainer{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logocontainer img{
+  height: 75px;
+  width: 575x;
+}
+.brandcontainer h1{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 1.5em;
+}
+
+.brandcontainer h1 span{
+  color: rgb(235, 44, 123);
+}
+.navbar{
+  height: 100%;
+  width: 600px;
+  /* border: 1px solid pink; */
+  margin-right: 20px;
+}
+.navbar ul{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar ul li{
+  list-style: none;
+ 
+}
+.navbar ul li a{
+  text-decoration: none;
+    /* border: 1px solid white ; */
+    font-size: 1.2em;
+    padding: 0 10px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: white;
+    background-color: rgba(194, 191, 191,0.2);
+}
+.navbar ul li a:hover{
+  color:rgb(235, 44, 123);
+}
+#togglecontainer{
+  display: none;
+}
+#smallnavbar{
+  display: none;
+}
+
+/* services section css */
+#services{
+  height: auto;
+  width: 100%;
+  border: 1px solid rgba(8, 8, 8, 0.8);
+  background-color: rgba(8, 8, 8, 0.8);
+}
+#services h1{
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-size: 3em;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+#services h1 span{
+    color:rgb(235, 44, 123) ;
+}
+.servicecontainer{
+  /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 155vh;
+    width: 100%;
+    margin-top: 39px
+}
+.box{
+  width: 28vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(170, 168, 168,0.5);
+    box-shadow: -5px -5px 67px 32px rgba(24, 23, 23, 0.7) inset;
+    /* border: 2px solid yellow; */
+  }
+  .box:hover{
+    background-color: rgba(170, 168, 168,0.4);
+  }
+  .box h2{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(233, 223, 223);
+  }
+  .box i{
+    font-size: 3em;
+    color:rgb(235, 44, 123) ;
+  }
+  .box p{
+  word-break: break-all;
+  font-family: 'Merriweather', serif;
+  font-size: 1em;
+  text-align: center;
+  padding: 0px  18px;
+  color: rgba(14, 13, 13, 1);
+  font-weight: bold;
+}
+
+/* Attorneys section start */
+#attorneys{
+  background: linear-gradient(to right bottom,rgb(85, 68, 68),rgb(61, 16, 61));
+    height: 59vh;
+    color: white;
+    overflow: hidden;
+
+}
+#attorneys h2{
+  font-size: 3em;
+    font-family: 'raleway', cursive;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+#attorneys h2 span{
+  color:rgb(235, 44, 123) ;
+}
+
+.attorneyscontainer{
+  height: 44vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+ .cont{
+  width: 26vw;
+  height: 26vh;
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(202, 196, 196, 15%);
+}
+
+
+ .imgcontainer{
+   height: 85px;
+   width: 85px;
+   border-radius: 50%;
+   overflow: hidden;
+ }
+
+ .imgcontainer img{
+   height: 85px;
+   width: 85px;
+ }
+
+ .cont h1{
+  font-family: 'Baloo Bhaina 2', cursive;
+  text-align: center;
+  font-size: 1.5em;
+ }
+
+ .cont h3{
+  font-family: 'raleway', sans-serif;
+    font-size: 1em;
+    position: relative;
+    bottom: 22px;
+    color:rgb(235, 44, 123) ;
+    font-weight: bold;
+}
+ .cont p{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 0.8em;
+  position: relative;
+  bottom: 15px;
+  color: black;
+  font-weight: bolder;
+}
+
+ .imgcontainer img:hover{
+   opacity: 0.8;
+ }
+
+ .cont:hover{
+   background-color: rgba(209, 200, 200,0.1);
+ }
+
+ /* Contact us css */
+ #contactus{
+   height: 100vh;
+   width: 100%;
+   overflow: hidden;
+   /* border: 3px solid red; */
+   background-color: black;
+ }
+ #contactus h1{
+  text-align: center;
+  font-size: 3em;
+  margin-top: 50px;
+  font-family: "raleway",cursive;
+  color: white;
+ }
+ #contactus h1 span{
+   color:rgb(235, 44, 123);
+ }
+ .contactcontainer{
+   height: 85%;
+   width: 100%;
+   /* border: 2px solid pink; */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 5vh;
+ }
+ form{
+  height: 60vh;
+  width: 85%;
+   /* border: 2px solid yellow; */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+ }
+ .inpbox{
+   width: 100%;
+   height: 10%;
+   /* border: 2px solid red; */
+   background-color: black;
+   border-bottom: 3px solid rgba(107, 105, 105, 0.3);
+  
+ }
+ @keyframes textborder1{
+   0%{
+    border-bottom: 3px solid rgba(107, 105, 105, 0.5);
+   }
+   100%{
+    border-bottom: 3px solid rgba(235, 44, 123,1); 
+   }
+ }
+ @keyframes textborder2{
+   0%{
+    border-bottom: 3px solid rgba(235, 44, 123,1); 
+   }
+   100%{
+    border-bottom: 3px solid rgba(105, 99, 99, 0.5); 
+   }
+ }
+ .inpbox4{
+   height: 31%;
+ }
+ .inp{
+   width: 100%;
+   height: 100%;
+   outline: none;
+   border-width: 0;
+   padding: 0 10px;
+   font-size: 1.3em;
+   font-family: "raleway",cursive;
+   background-color: black;
+   color: rgb(255, 255, 255);
+ }
+ .textinp{
+   padding: 5px 10px;
+ }
+ 
+ #submitbtn{
+   height: 50px;
+   width: 50%;
+   /* border: 2px solid red; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.3em;
+   font-family: "raleway",cursive;
+   font-weight: bolder;
+   color: white;
+   background-color:rgba(235, 44, 123,1); 
+ }
+ #socialmedia{
+   /* border: 2px solid red; */
+   width: 30%;
+   height: 10%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+ #socialmedia i{
+   font-size: 1.5em;
+   color: white;
+ }
+
+/* Media query start from here */
+@media (max-width:1000px) {
+  .navbar{
+    font-size: 13px;
+    width: 446px;
+  }
+}
+
+@media (max-width:1000px) and (min-width:650px) {
+  .box{
+    width: 40vw;
+  }
+  #attorneys{
+    height: 124vh;
+  }
+  .attorneyscontainer{
+    height: 106vh;
+    /* width: 74vw; */
+    flex-direction: column;
+  }
+  .cont{
+    width: 50vw;
+    height: 26vh;
+  }
+  .cont p{
+    margin: 0 10px;
+  }
+}
+
+
+@media (max-width:650px) and (min-width:400px) {
+  #togglecontainer{
+    height: 36px;
+    width: 36px;
+  }
+  #threeline {
+    font-size: 1.5em;
+  }
+  .servicecontainer{
+    height: 280vh;
+  }
+  #services h1{
+    font-size: 2.3em;
+  }
+  .box{
+    width: 70vw;
+  }
+  #attorneys{
+    height: 124vh;
+  }
+  #attorneys h2{
+    font-size: 2.3em;
+  }
+  .attorneyscontainer{
+    height: 106vh;
+    /* width: 74vw; */
+    flex-direction: column;
+  }
+  .cont{
+    width: 61vw;
+    height: 26vh;
+    font-size: 15px;
+  }
+  .cont p{
+    margin: 0 10px;
+  }
+  #contactus h1{
+    font-size:2.3em;
+  }
+  form{
+    font-size: 14px;
+  }
+  #socialmedia{
+    width: 50%;
+  }
+}
+
+
+@media (max-width:400px) {
+  #navigationcont{
+    font-size: 13px;
+  }
+  .brandcontainer{
+    width: 151px;
+    margin-left: 0px;
+  }
+  #introsection{
+    font-size: 16px;
+  }
+  .introcontainer {
+    height: 25vh;
+    width: 86vw;
+  }
+  #brand {
+    font-size: 2.5em;
+  }
+  .introcontainer p {
+    font-size: 1.3em;
+  }
+  .servicecontainer{
+    height: 276vh;
+  }
+  #services h1{
+    font-size: 1.8em;
+  }
+  .box{
+    width: 85vw;
+    font-size: 11px;
+  }
+  #attorneys{
+    height: 124vh;
+  }
+  #attorneys h2{
+    font-size: 1.8em;
+  }
+  .attorneyscontainer{
+    height: 106vh;
+    /* width: 74vw; */
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .cont{
+    width: 70vw;
+    height: 30vh;
+    font-size: 12px;
+  }
+  .cont h3{
+    bottom: 14px;
+  }
+  .cont p{
+    margin: 0 10px;
+  }
+  #contactus h1{
+    font-size:1.8em;
+  }
+  form{
+    font-size: 13px;
+  }
+  #submitbtn{
+    width: 100%;
+  }
+  #socialmedia{
+    width: 75%;
+  }
+}
+
+
+@media (max-width:800px) {
+  .navbar{
+    display: none;
+  }
+   #navigationcont{
+     position: fixed;
+   }
+  #togglecontainer{
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    margin-right: 23px;
+    border: 1px solid white;
+  }
+  #togglecontainer i{
+    font-size: 1.5em;
+    color: white;
+  }
+  #smallnavbar{
+    height: 32vh;
+    width: 100%;
+    background-color: rgba(20, 20, 19,0.8);
+    position: fixed;
+    top: -24vh;
+    display: block;
+  }
+  @keyframes navanim {
+    0%{
+       top: -24vh;
+    }
+    100%{
+        top:8vh ;
+    }
+  }
+  @keyframes navanim2{
+    0%{
+       top: 8vh;
+    }
+
+    100%{
+        top: -24vh;
+    }
+  }
+
+  #smallnavbar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  #smallnavbar ul li{
+    list-style: none;
+  }
+  #smallnavbar ul li a{
+    text-decoration: none;
+    /* border: 1px solid white ; */
+    font-size: 1.2em;
+    padding: 0 10px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: white;
+    background-color: rgba(194, 191, 191,0.2);
+  }
+  #smallnavbar ul li a:hover{
+    color:rgb(235, 44, 123);
+  }
+}
