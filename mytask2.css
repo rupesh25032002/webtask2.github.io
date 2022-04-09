@@ -434,6 +434,7 @@
    font-weight: bolder;
    color: white;
    background-color:rgba(235, 44, 123,1); 
+   cursor: pointer;
  }
  #socialmedia{
    /* border: 2px solid red; */
@@ -446,6 +447,10 @@
  #socialmedia i{
    font-size: 1.5em;
    color: white;
+   cursor:pointer;
+ }
+#socialmedia i:hover{
+   color:rgba(235, 44, 123,1);
  }
 
 /* Media query start from here */
